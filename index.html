@@ -20,7 +20,12 @@
       let image = document.createElement('img');
       image.src = objectURL;
       document.body.appendChild(image);
-    })</script>
+    })
+    
+    let errorCase = promise3.catch(e => {
+  console.log('There has been a problem with your fetch operation: ' + e.message);
+});
+    </script>
   </body>
 
 </html>

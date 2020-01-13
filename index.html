@@ -13,12 +13,12 @@
   <body>
 
     <p>This is my page</p>
-    <script>let promise = fetch('coffee.jpg');
+    <script>let promise = fetch('coffe.jpg');
     let promise2 = promise.then(response => response.blob());
     let promise3 = promise2.then(myBlob => {
       let objectURL = URL.createObjectURL(myBlob);
       let image = document.createElement('img');
-      image.src = objectRL;
+      image.src = objectURL;
       document.body.appendChild(image);
     })
     
